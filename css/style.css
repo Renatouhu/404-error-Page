@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+:root{
+    --primary-font: 'Inconsolata', monospace;
+    --secondary-font: 'Space Mono', monospace;
+    --primary-color-text: #BDBDBD;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-family: var(--primary-font);
+    line-height: 1.574rem;
+    margin: 40px 77px;
+}
+
+h1, .main__information p{
+    font-size: 1.5rem;
+}
+
+main{
+    font-family: var(--secondary-font);
+    display: flex;
+    justify-content: center;
+    padding: 0 77px;
+    margin-top: 200px;
+    height: 100%;
+    align-self: center;
+}
+
+.main__image{
+    width: 539.22px;
+    height: 447.43px;
+    margin-right: 120px;
+}
+
+.main__information h2{
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5.924rem;
+    margin-bottom: 34px;
+    letter-spacing: -0.14rem;
+}
+
+.main__information p{
+    font-weight: 400;
+    line-height: 2.221rem;
+    margin-bottom: calc(64px + 23px);
+    letter-spacing: -0.0525rem;
+}
+
+.main__information a{
+    background-color: #333333;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 0.875rem;
+    padding: 23px 43px;
+    text-transform: uppercase;
+}
+
+.credits{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--primary-color-text);
+    text-align: center;
+}
+
+.credits a{
+    color: var(--primary-color-text);
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 1.296rem;
+}
+
+@media (max-width: 375px){
+    body{
+        padding: 20px 24px;
+        box-sizing: border-box;
+    }
+
+    h1{
+        margin: 0;
+    }
+
+    main{
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .main__image{
+        width: 286.83px;
+        height: 238px;
+        margin: calc(64px - 20px) calc(44px - 24px);
+    }
+
+    .main__information h2{
+        font-size: 3rem;
+        line-height: 4.443rem;
+        margin-bottom: 30px;
+    }
+
+    .main__information p{
+        font-size: 1.125rem;
+        line-height: 1.666rem;
+        margin-bottom: 66px;
+    }
+
+    .credits p{
+        
+        line-height: 1.067rem;
+    }
+}
